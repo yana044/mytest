@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_API_Json", "Test_API_Json\Test_API_Json.csproj", "{E5DE8FD7-6E70-4236-9FB0-0EAF5B099B11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestKaspersky", "TestKaspersky\TestKaspersky.csproj", "{4A7886D6-15C8-4358-AB3C-1426DBABC9B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E5DE8FD7-6E70-4236-9FB0-0EAF5B099B11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5DE8FD7-6E70-4236-9FB0-0EAF5B099B11}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5DE8FD7-6E70-4236-9FB0-0EAF5B099B11}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5DE8FD7-6E70-4236-9FB0-0EAF5B099B11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A7886D6-15C8-4358-AB3C-1426DBABC9B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A7886D6-15C8-4358-AB3C-1426DBABC9B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A7886D6-15C8-4358-AB3C-1426DBABC9B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A7886D6-15C8-4358-AB3C-1426DBABC9B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {204EE545-7A2D-4C36-9672-B466CD826724}
+		SolutionGuid = {D8B8D98E-2908-46C4-AC6B-0922AABB5B04}
 	EndGlobalSection
 EndGlobal
