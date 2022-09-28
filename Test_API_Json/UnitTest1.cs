@@ -8,7 +8,6 @@ namespace Test_API_Json
 {
     public class Tests
     {
-
         [Test]
         public void Test1()
         {
