@@ -20,6 +20,7 @@ namespace TestKaspersky
             emailTextBox.Type(username);
             passwordTextBox.State.WaitForEnabled();
             passwordTextBox.Type(password);
+            singinbtn.State.WaitForClickable();
             singinbtn.ClickAndWait();
         }
     }
