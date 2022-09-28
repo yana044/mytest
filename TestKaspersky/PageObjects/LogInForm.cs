@@ -21,7 +21,8 @@ namespace TestKaspersky
             passwordTextBox.State.WaitForEnabled();
             passwordTextBox.Type(password);
             singinbtn.State.WaitForClickable();
-            singinbtn.ClickAndWait();
+            singinbtn.JsActions.Click();
+            //singinbtn.ClickAndWait();
         }
     }
 }
