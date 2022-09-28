@@ -52,7 +52,6 @@ namespace Test_API_Json
             UserModel expexteduser5 = TestDataUtils<UserModel>.GetTestData("testDataUser5.json");
             UserModel user5fromlist = allusers.Data.Find(p => p.Id == 5);
             Assert.That(expexteduser5.Equals(user5fromlist), "User (id=5) data NOT equals to test data");
-
             ResponseModel<UserModel> user5 = APIAppRequest<UserModel>.GetData("5", "/users/");
             int statuscodeuser5 = user5.StatusCode;
             int expStatusforuser5 = (int)Status—ode.Step6;
