@@ -1,0 +1,23 @@
+{
+  "url": "https://jsonplaceholder.typicode.com",
+  "1": {
+    "StatusCode": "200",
+    "ResponseBody": "json"
+  },
+  "2": {
+    "StatusCode": "200"
+  },
+  "3": {
+    "StatusCode": "404"
+  },
+  "4": {
+    "StatusCode": "201"
+  },
+  "5": {
+    "StatusCode": "200",
+    "ResponseBody": "json"
+  },
+  "6": {
+    "StatusCode": "201"
+  }
+}
