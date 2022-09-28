@@ -1,27 +1,26 @@
-﻿using Aquality.Selenium.Browsers;
+﻿using OpenQA.Selenium;
 using Aquality.Selenium.Elements.Interfaces;
-using OpenQA.Selenium;
+using Aquality.Selenium.Forms;
 
 namespace TestKaspersky
 {
-    public class LogInForm
+    public class LogInForm : Form
     {
-        private IButton singinbtn = AqualityServices.Get<IElementFactory>().GetButton(By.XPath("//button[@data-at-selector='welcomeSignInBtn']"), "SignIn Button");
-        
+        private ITextBox emailTextBox => ElementFactory.GetTextBox(By.XPath("//input[@data-at-selector='emailInput']"), "Email");
+        private ITextBox passwordTextBox => ElementFactory.GetTextBox(By.XPath("//input[@data-at-selector='passwordInput']"), "Password");
+        private IButton singinbtn => ElementFactory.GetButton(By.XPath("//button[@data-at-selector='welcomeSignInBtn']"), "SignIn Button");
+
+        public LogInForm() : base(By.XPath("//form[@data-at-selector='signInContent']"), "Sign In Form")
+        {
+        }
+
         public void LogIn(string username, string password)
         {
-            var emailTextBox = AqualityServices.Get<IElementFactory>().GetTextBox(By.XPath("//input[@data-at-selector='emailInput']"), "Email");
-            emailTextBox.State.WaitForDisplayed();
+            emailTextBox.State.WaitForEnabled();
             emailTextBox.Type(username);
-            var passwordTextBox = AqualityServices.Get<IElementFactory>().GetTextBox(By.XPath("//input[@data-at-selector='passwordInput']"), "Password");
-            passwordTextBox.State.WaitForDisplayed();
+            passwordTextBox.State.WaitForEnabled();
             passwordTextBox.Type(password);
-            singinbtn.State.WaitForClickable();
             singinbtn.ClickAndWait();
-        }
-        public bool IsLogInFormDisplayed()
-        {
-            return singinbtn.State.IsDisplayed;
         }
     }
 }
