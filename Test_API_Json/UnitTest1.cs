@@ -48,7 +48,6 @@ namespace Test_API_Json
             int expStatusforusers = (int)Status—ode.Step5;
             Assert.IsTrue(statuscodeusers == expStatusforusers, $"Status code is NOT {expStatusforusers}");
             Assert.That(allusers.TypeResponseBody.Contains("json"));
-
             AqualityServices.Logger.Info($"Step 6: Send GET request to get user with id=5");
             UserModel expexteduser5 = TestDataUtils<UserModel>.GetTestData("testDataUser5.json");
             UserModel user5fromlist = allusers.Data.Find(p => p.Id == 5);
